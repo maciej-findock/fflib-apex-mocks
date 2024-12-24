@@ -8,7 +8,7 @@ It derives its inspiration from the well known Java mocking framework [Mockito](
 
 <a href="https://githubsfdeploy.herokuapp.com?owner=apex-enterprise-patterns&repo=fflib-apex-mocks">
   <img alt="Deploy to Salesforce"
-	   src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/src/main/webapp/resources/img/deploy.png">
+       src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/src/main/webapp/resources/img/deploy.png">
 </a>
 
 ## Using ApexMocks on the Salesforce Lightning Platform
@@ -25,13 +25,13 @@ Lets assume we've written our own list interface fflib_MyList.IList that we want
 ```Java
 public class fflib_MyList implements IList
 {
-	public interface IList
-	{
-		void add(String value);
-		String get(Integer index);
-		void clear();
-		Boolean isEmpty();
-	}
+    public interface IList
+    {
+        void add(String value);
+        String get(Integer index);
+        void clear();
+        Boolean isEmpty();
+    }
 }
 ```
 ### verify() behaviour verification
@@ -81,9 +81,9 @@ mocks.stopStubbing();
 Account acc = new Account();
 Integer mockFormulaResult = 10;
 acc = (Account)fflib_ApexMocksUtils.setReadOnlyFields(
-		acc,
-		Account.class,
-		new Map<SObjectField, Object> {Account.Your_Formula_Field__c => mockFormulaResult}
+        acc,
+        Account.class,
+        new Map<SObjectField, Object> {Account.Your_Formula_Field__c => mockFormulaResult}
 );
 System.assertEquals(mockFormulaResult, acc.Your_Formula_Field__c);
 ```

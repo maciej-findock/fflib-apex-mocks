@@ -4,7 +4,7 @@
 @isTest
 public class fflib_InheritorTest
 {
- 	@isTest
+     @isTest
     public static void canInstantiateMultipleInterfaceInheritor()
     {
         fflib_ApexMocks mocks = new fflib_ApexMocks();
@@ -14,7 +14,7 @@ public class fflib_InheritorTest
         System.Assert.isInstanceOfType(inheritor, fflib_Inheritor.IC.class);
     }
 
- 	@isTest
+     @isTest
     public static void canStubMultipleInterfaceInheritor()
     {
         fflib_ApexMocks mocks = new fflib_ApexMocks();

@@ -4,7 +4,7 @@
 @isTest
 public class fflib_Inheritor implements IA, IB, IC
 {
-	public interface IA {String doA();}
+    public interface IA {String doA();}
     public interface IB {String doB();}
     public interface IC {String doC();}
     
